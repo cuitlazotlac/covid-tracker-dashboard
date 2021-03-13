@@ -17,9 +17,11 @@ class App extends React.Component{
   }
 
   handleCountryChange = async (country) => {
-    // console.log(country);
-    // fetch the data
-    // set the state
+    const fetchData = await fetchedData();
+
+    if(country) {
+      changeableUrl = `${url}/countries/${country}`
+    }
   }
 
   render() {
