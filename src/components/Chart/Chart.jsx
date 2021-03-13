@@ -35,7 +35,7 @@ const Chart = ({ data: {confirmed, deaths, recovered}, country }) => {
     />
   ) : null);
 
-  const barChart = {
+  const barChart = (
     confirmed ? (
       <Bar 
         data={{
@@ -56,7 +56,7 @@ const Chart = ({ data: {confirmed, deaths, recovered}, country }) => {
         }}
       />
     ) : null
-  }
+  )
 
   return (
       <div className={styles.container}>
