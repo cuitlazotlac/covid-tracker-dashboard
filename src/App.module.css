@@ -20,6 +20,7 @@ body {
     }
 
     .image{
-        width: 100%;
+        width: 3px;
+        height: 2px;
     }
 }
